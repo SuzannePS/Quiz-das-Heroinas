@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Coming Soon', cursive;
+    background-image:url(../Imagenspersonagens/fundocidade.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    font-family:'Bangers', cursive;
+    width: 100%;
+    height: 30%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.titulo-principal{
+    color: rgb(230, 17, 17);
+    font-size: 80px;
+    padding: 0 15px;
+    margin-top: 3%;  
+    text-shadow: black  10px 10px 10px;
+    text-align: end;
+}
+
+.corpo{
+    width: 100% ;
+    height: calc(100vh- 30% - 70px ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagInicial{
+    width: 75%;
+    height: 50%;
+    margin: 70px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.introdução {
+    text-align: justify;
+    color: blanchedalmond;
+    font-size: 25px;
+}
+.pergunta{
+    margin: 8%;
+    color: white;
+    font-size: 40px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10% 0;
+    align-items: center;
+}
+
+
+.container-personagens li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.container-personagens img{
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.container-personagens li:hover{
+    border-color: #2e047e;
+    transition: 1s;
+}
+
+.link{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textoheroi{
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+
+footer {
+    background-color: rgb(248, 206, 18);
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+    .título {
+        display: none;
+    }
+    .imagens li{
+        display:flex;
+        flex-direction: column;
+    }
+    .container-personagens{
+        display: flex;
+        flex-direction: column;
+    }
+}
